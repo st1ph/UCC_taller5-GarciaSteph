@@ -1,0 +1,12 @@
+Paciente: Royber | Fecha Nac: 1990-06-23 | Género: M | Fecha Visita: 2026-08-30 | Médico: Federico Ramirez | Medicamentos: Si
+Paciente: rodrigo | Fecha Nac: 2000-06-04 | Género: M | Fecha Visita: 2026-06-30 | Médico: Luis alfredo | Medicamentos: Si
+Paciente: rodrigo | Fecha Nac: 2000-06-04 | Género: M | Fecha Visita: 2026-06-30 | Médico: Luis alfredo | Medicamentos: Si
+Paciente: rodrigo | Fecha Nac: 2000-06-04 | Género: M | Fecha Visita: 2026-06-30 | Médico: Luis alfredo | Medicamentos: Si
+Paciente: rodrigo | Fecha Nac: 2000-06-04 | Género: M | Fecha Visita: 2026-06-30 | Médico: Luis alfredo | Medicamentos: Si
+Paciente: rodrigo | Fecha Nac: 2000-06-04 | Género: M | Fecha Visita: 2026-06-30 | Médico: Luis alfredo | Medicamentos: Si
+Paciente: juan | Fecha Nac: 2001-06-23 | Género: M | Fecha Visita: 2026-04-12 | Médico: carlos julian | Medicamentos: Si
+Paciente: andres | Fecha Nac: 1968-02-23 | Género: M | Fecha Visita: 2026-05-13 | Médico: Rodolfo jimenez | Medicamentos: Si
+Paciente: andres | Fecha Nac: 1968-02-23 | Género: M | Fecha Visita: 2026-05-13 | Médico: Rodolfo jimenez | Medicamentos: Si
+Paciente: sandra | Fecha Nac: 1999-08-29 | Género: F | Fecha Visita: 2026-09-18 | Médico: Manuel reyes | Medicamentos: Si
+Paciente: ricardo | Fecha Nac: 1996-05-30 | Género: M | Fecha Visita: 2026-08-21 | Médico: Juan manizales | Medicamentos: Si
+Paciente: Steph Garcia Sanchez | Fecha Nac: 2006-08-29 | Género: M | Fecha Visita: 2026-07-24 | Médico: Manuel reyes | Medicamentos: Si

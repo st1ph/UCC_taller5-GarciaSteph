@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Exitoso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="alert alert-success">
+        <h4>¡Registro exitoso!</h4>
+        <p>Los datos fueron guardados correctamente.</p>
+    </div>
+    <p><strong>Nombre:</strong> {{ paciente.nombre }}</p>
+    <p><strong>Médico:</strong> {{ visita.nombreMedico }}</p>
+    <a href="http://127.0.0.1:8000/" class="btn btn-primary">Registrar otro paciente</a>
+</div>
+</body>
+</html>

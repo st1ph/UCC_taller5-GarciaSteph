@@ -55,32 +55,33 @@ class ProcesarControlador extends AbstractController
         $em->flush();
 
         // Guardar en archivo TXT
-        $txtData = "Paciente: " . $paciente->getNombre() .
-            " | Fecha Nac: " . $paciente->getFechaNacimiento()->format('Y-m-d') .
-            " | Género: " . $paciente->getGenero() .
-            " | Fecha Visita: " . $visita->getFechaVisita()->format('Y-m-d') .
-            " | Médico: " . $visita->getNombreMedico() .
-            " | Medicamentos: " . $visita->getRecibeMedicamentos() . "\n";
-        file_put_contents('datos_paciente.txt', $txtData, FILE_APPEND);
+$ruta = $this->getParameter('kernel.project_dir');
+$txtData = "Paciente: " . $paciente->getNombre() .
+    " | Fecha Nac: " . $paciente->getFechaNacimiento()->format('Y-m-d') .
+    " | Género: " . $paciente->getGenero() .
+    " | Fecha Visita: " . $visita->getFechaVisita()->format('Y-m-d') .
+    " | Médico: " . $visita->getNombreMedico() .
+    " | Medicamentos: " . $visita->getRecibeMedicamentos() . "\n";
+file_put_contents($ruta . '/datos_paciente.txt', $txtData, FILE_APPEND);
 
-        // Guardar en JSON paciente
-        $pacienteData = [
-            'id' => $paciente->getId(),
-            'nombre' => $paciente->getNombre(),
-            'fecha_nacimiento' => $paciente->getFechaNacimiento()->format('Y-m-d'),
-            'genero' => $paciente->getGenero()
-        ];
-        file_put_contents('datos_paciente.json', json_encode($pacienteData, JSON_PRETTY_PRINT));
+// Guardar en JSON paciente
+$pacienteData = [
+    'id' => $paciente->getId(),
+    'nombre' => $paciente->getNombre(),
+    'fecha_nacimiento' => $paciente->getFechaNacimiento()->format('Y-m-d'),
+    'genero' => $paciente->getGenero()
+];
+file_put_contents($ruta . '/datos_paciente.json', json_encode($pacienteData, JSON_PRETTY_PRINT));
 
-        // Guardar en JSON visita
-        $visitaData = [
-            'id' => $visita->getId(),
-            'fecha_visita' => $visita->getFechaVisita()->format('Y-m-d'),
-            'nombre_medico' => $visita->getNombreMedico(),
-            'recibe_medicamentos' => $visita->getRecibeMedicamentos(),
-            'paciente_id' => $paciente->getId()
-        ];
-        file_put_contents('visita.json', json_encode($visitaData, JSON_PRETTY_PRINT));
+// Guardar en JSON visita
+$visitaData = [
+    'id' => $visita->getId(),
+    'fecha_visita' => $visita->getFechaVisita()->format('Y-m-d'),
+    'nombre_medico' => $visita->getNombreMedico(),
+    'recibe_medicamentos' => $visita->getRecibeMedicamentos(),
+    'paciente_id' => $paciente->getId()
+];
+file_put_contents($ruta . '/visita.json', json_encode($visitaData, JSON_PRETTY_PRINT));
 
         return $this->render('paciente/respuesta.html.twig', [
             'paciente' => $paciente,
